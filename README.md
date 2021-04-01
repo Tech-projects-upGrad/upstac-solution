@@ -48,3 +48,31 @@ UPSTAC-Microservices-Backend  UPSTAC-Microservices-Frontend
 
 
 ````
+
+3.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend.
+````
+FROM node:10
+WORKDIR /opt/app
+COPY package*.json ./
+COPY . .
+RUN CI=true
+# Installs all node packages
+RUN npm install
+# Copies everything over to Docker environment
+# Uses port which is used by the actual application
+EXPOSE 3000
+# Finally runs the application
+CMD [ "npm", "start" ]
+````
+4.Write Dockerfile's for backend microservices and place it in UPSTAC-Microservices-Frontend.
+
+````
+FROM openjdk:14-jdk-alpine
+MAINTAINER upgrad
+ADD ./target/upstac-api-0.0.1-SNAPSHOT.jar /opt/app/upstac-api-0.0.1-SNAPSHOT.jar
+WORKDIR /opt/app
+ENV PATH="${PATH}:${JAVA_HOME}/bin"
+EXPOSE 8080
+ENTRYPOINT [ "java", "-jar", "/opt/app/upstac-api-0.0.1-SNAPSHOT.jar"]
+
+````
