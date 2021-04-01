@@ -15,4 +15,7 @@ https://github.com/upgrad-edu/UPSTAC-Microservices-Backend/
 Ubuntu 20.04 compute instance is used for this exercise
 <img width="932" alt="ubuntuami" src="https://user-images.githubusercontent.com/77958988/113335071-1686f500-9342-11eb-8ca3-2e36b6a3260d.png">
 
-![image](https://user-images.githubusercontent.com/77958988/113334650-93659f00-9341-11eb-8d79-be0419efda2a.png)
+<img width="935" alt="ubuntuinstancetype" src="https://user-images.githubusercontent.com/77958988/113335439-8f864c80-9342-11eb-8863-9b09bb1e8f56.png">
+
+
+
