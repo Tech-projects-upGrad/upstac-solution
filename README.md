@@ -77,3 +77,15 @@ EXPOSE 8080
 ENTRYPOINT [ "java", "-jar", "/opt/app/upstac-api-0.0.1-SNAPSHOT.jar"]
 
 ````
+5.Create docker image for frontend.
+
+````
+sudo docker build -t vaishalinankani08/upstac-frontend .
+````
+6.Create docker image's for backend microservices i.e. document,master & registeration.
+
+````
+sudo docker build -t vaishalinankani08/upstac-document .
+sudo docker build -t vaishalinankani08/upstac-registration .
+sudo docker build -t vaishalinankani08/upstac-master .
+````
