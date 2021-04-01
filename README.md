@@ -55,7 +55,7 @@ Maven installation:
 sudo apt update
 sudo apt install maven
 ````
-4.Create jar files for the backend microservices  using maven.
+4.Create jar files for the backend microservices .
 ````
 mvn clean package install spring-boot:repackage -Pprod
 ````
@@ -99,5 +99,12 @@ UPSTAC-Microservices-Backend/upstac-api-document$sudo docker build -t vaishalina
 UPSTAC-Microservices-Backend/upstac-api-register$sudo docker build -t vaishalinankani08/upstac-registration .
 UPSTAC-Microservices-Backend/upstac-api-master$sudo docker build -t vaishalinankani08/upstac-master .
 ````
-9.
+9.Install aws cli on ubuntu compute instance
+````
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+````
+11.
 
