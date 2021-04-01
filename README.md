@@ -50,6 +50,7 @@ UPSTAC-Microservices-Backend  UPSTAC-Microservices-Frontend
 ````
 
 3.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend.
+Dockerfile:
 ````
 FROM node:10
 WORKDIR /opt/app
@@ -64,8 +65,8 @@ EXPOSE 3000
 # Finally runs the application
 CMD [ "npm", "start" ]
 ````
-4.Write Dockerfile's for backend microservices and place it in UPSTAC-Microservices-Frontend.
-
+4.Write Dockerfile's for backend microservices(document,master & register and place it in UPSTAC-Microservices-Frontend.
+Dockerfile:
 ````
 FROM openjdk:14-jdk-alpine
 MAINTAINER upgrad
