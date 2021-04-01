@@ -55,7 +55,11 @@ Maven installation:
 sudo apt update
 sudo apt install maven
 ````
-4.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend.
+4.Create jar files for the backend microservices  using maven.
+````
+mvn clean package install spring-boot:repackage -Pprod
+````
+5.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend.
 Dockerfile:
 ````
 FROM node:10
@@ -71,7 +75,7 @@ EXPOSE 3000
 # Finally runs the application
 CMD [ "npm", "start" ]
 ````
-5.Write Dockerfile's for backend microservice's(document,master & register )and place them in corresponding folders in UPSTAC-Microservices-Backend.
+6.Write Dockerfile's for backend microservice's(document,master & register )and place them in corresponding folders in UPSTAC-Microservices-Backend.
 Dockerfile:
 ````
 FROM openjdk:14-jdk-alpine
@@ -83,17 +87,17 @@ EXPOSE 8080
 ENTRYPOINT [ "java", "-jar", "/opt/app/upstac-api-0.0.1-SNAPSHOT.jar"]
 
 ````
-6.Create docker image for frontend.
+7.Create docker image for frontend.
 
 ````
 UPSTAC-Microservices-Frontend$sudo docker build -t vaishalinankani08/upstac-frontend .
 ````
-7.Create docker image's for backend microservices i.e. document , master & registeration.
+8.Create docker image's for backend microservices i.e. document , master & registeration.
 
 ````
 UPSTAC-Microservices-Backend/upstac-api-document$sudo docker build -t vaishalinankani08/upstac-document .
 UPSTAC-Microservices-Backend/upstac-api-register$sudo docker build -t vaishalinankani08/upstac-registration .
 UPSTAC-Microservices-Backend/upstac-api-master$sudo docker build -t vaishalinankani08/upstac-master .
 ````
-8.
+9.
 
