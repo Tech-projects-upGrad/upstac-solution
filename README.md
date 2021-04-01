@@ -106,5 +106,5 @@ sudo apt install unzip
 unzip awscliv2.zip
 sudo ./aws/install
 ````
-11.
+10.
 
