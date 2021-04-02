@@ -240,4 +240,49 @@ latest: digest: sha256:08905111cc99a86c76ae02613fc9d04b51123b46104f9baf7556a7131
 ubuntu@ip-172-31-47-81:~$
 
 ````
-14.
+14.Create repository for frontend microservice of UPSTAC Application and push image to repository
+````
+ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name frontend --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:976591367883:repository/frontend",
+        "registryId": "976591367883",
+        "repositoryName": "frontend",
+        "repositoryUri": "976591367883.dkr.ecr.us-east-1.amazonaws.com/frontend",
+        "createdAt": "2021-04-02T06:38:31+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+ubuntu@ip-172-31-47-81:~$ sudo docker tag 120bc5e8ef65   976591367883.dkr.ecr.us-east-1.amazonaws.com/frontend
+ubuntu@ip-172-31-47-81:~$ aws ecr get-login-password | sudo docker login --username AWS --password-stdin 976591367883.dkr.ecr.us-east-1.amazonaws.com/frontend
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-47-81:~$ sudo docker push 976591367883.dkr.ecr.us-east-1.amazonaws.com/frontend
+Using default tag: latest
+The push refers to repository [976591367883.dkr.ecr.us-east-1.amazonaws.com/frontend]
+63e7fa92ec01: Pushed
+0768e4fa7453: Pushed
+45575915d9df: Pushed
+59e1fbdfa06e: Pushed
+e633f0a01c11: Pushed
+42993f010c69: Pushed
+532218acbf39: Pushed
+e34081af2c41: Pushed
+25f2c43959c6: Pushed
+28f17d067081: Pushed
+f56d0812d4cc: Pushed
+0919c6356f3e: Pushed
+30840de9c53a: Pushed
+latest: digest: sha256:1011d58e07470cd8cd928755d766ffb9cd8284c21e722198ed00e9fd89b4313b size: 3053
+ubuntu@ip-172-31-47-81:~$
+
+````
