@@ -108,3 +108,27 @@ sudo ./aws/install
 ````
 10.
 
+
+
+
+````
+ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name registration --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:976591367883:repository/registration",
+        "registryId": "976591367883",
+        "repositoryName": "registration",
+        "repositoryUri": "976591367883.dkr.ecr.us-east-1.amazonaws.com/registration",
+        "createdAt": "2021-04-02T05:10:30+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+
+
+````
