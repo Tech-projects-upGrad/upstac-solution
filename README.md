@@ -130,7 +130,7 @@ sudo ./aws/install
 
 
 
-11.Create repository for registration microservice of UPSTAC Application
+11.Create repository for registration microservice of UPSTAC Application and push image to repository
 ````
 ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name registration --region us-east-1
 {
@@ -166,4 +166,78 @@ latest: digest: sha256:a06813987fe12f3397df3cc24662ab7d057043ac86be83a01921dc15e
 
 ````
 
+12.Create repository for master microservice of UPSTAC Application and push image to repository
 
+````
+ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name master --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:976591367883:repository/master",
+        "registryId": "976591367883",
+        "repositoryName": "master",
+        "repositoryUri": "976591367883.dkr.ecr.us-east-1.amazonaws.com/master",
+        "createdAt": "2021-04-02T06:31:46+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+ubuntu@ip-172-31-47-81:~$ sudo docker tag 8d430c791a5c  976591367883.dkr.ecr.us-east-1.amazonaws.com/master
+ubuntu@ip-172-31-47-81:~$ aws ecr get-login-password | sudo docker login --username AWS --password-stdin 976591367883.dkr.ecr.us-east-1.amazonaws.com/master
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-47-81:~$ sudo docker push 976591367883.dkr.ecr.us-east-1.amazonaws.com/master
+Using default tag: latest
+The push refers to repository [976591367883.dkr.ecr.us-east-1.amazonaws.com/master]
+1e21866ae6bb: Pushed
+f199ad476e12: Pushed
+531743b7098c: Pushed
+latest: digest: sha256:f1d222b32a2ee0f966464622703d9ed99f69d1da32af44e8cc935b862e5f2be3 size: 953
+
+
+````
+13.Create repository for document microservice of UPSTAC Application and push image to repository
+
+````
+ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name document --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:976591367883:repository/document",
+        "registryId": "976591367883",
+        "repositoryName": "document",
+        "repositoryUri": "976591367883.dkr.ecr.us-east-1.amazonaws.com/document",
+        "createdAt": "2021-04-02T06:34:50+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+ubuntu@ip-172-31-47-81:~$ sudo docker tag c8cab07c2755  976591367883.dkr.ecr.us-east-1.amazonaws.com/document
+ubuntu@ip-172-31-47-81:~$ aws ecr get-login-password | sudo docker login --username AWS --password-stdin 976591367883.dkr.ecr.us-east-1.amazonaws.com/document
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-47-81:~$ sudo docker push 976591367883.dkr.ecr.us-east-1.amazonaws.com/document
+Using default tag: latest
+The push refers to repository [976591367883.dkr.ecr.us-east-1.amazonaws.com/document]
+0409820a92ac: Pushed
+f199ad476e12: Pushed
+531743b7098c: Pushed
+latest: digest: sha256:08905111cc99a86c76ae02613fc9d04b51123b46104f9baf7556a7131a2c5eef size: 953
+ubuntu@ip-172-31-47-81:~$
+
+````
+14.
