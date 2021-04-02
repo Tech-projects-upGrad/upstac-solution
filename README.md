@@ -289,7 +289,10 @@ ubuntu@ip-172-31-47-81:~$
 15. Verify that repositories are created from AWS console for ECR
 ![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
 
-16. Create Task definition for MySQL
+
+16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy 
+
+18. Create Task definition for MySQL
 
 17. Create Task definition for Registration
 
