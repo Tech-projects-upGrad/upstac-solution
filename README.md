@@ -286,3 +286,5 @@ latest: digest: sha256:1011d58e07470cd8cd928755d766ffb9cd8284c21e722198ed00e9fd8
 ubuntu@ip-172-31-47-81:~$
 
 ````
+15. Verify that repositories are created from AWS console for ECR
+![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
