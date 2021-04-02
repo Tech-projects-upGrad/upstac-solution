@@ -388,16 +388,16 @@ ubuntu@ip-172-31-47-81:~$
 
 20. Create Task definition for Frontend
 
-<img width="682" alt="frontend1" src="https://user-images.githubusercontent.com/77958988/113413455-60221f00-93d8-11eb-9b8d-7efda714c23a.png">
+<img width="682" alt="frontend1" border="2" src="https://user-images.githubusercontent.com/77958988/113413455-60221f00-93d8-11eb-9b8d-7efda714c23a.png">
 
-<img width="835" alt="frontend2" src="https://user-images.githubusercontent.com/77958988/113413481-6f08d180-93d8-11eb-82fe-2592e9e45404.png">
+<img width="835" alt="frontend2" border="2" src="https://user-images.githubusercontent.com/77958988/113413481-6f08d180-93d8-11eb-82fe-2592e9e45404.png">
 
-<img width="938" alt="frontend3" src="https://user-images.githubusercontent.com/77958988/113413500-7af49380-93d8-11eb-8617-caddecf29181.png">
+<img width="938" alt="frontend3" border="2" src="https://user-images.githubusercontent.com/77958988/113413500-7af49380-93d8-11eb-8617-caddecf29181.png">
 
-<img width="854" alt="frontend4" src="https://user-images.githubusercontent.com/77958988/113413529-88aa1900-93d8-11eb-9ff1-856634fc3535.png">
+<img width="854" alt="frontend4" border="2" src="https://user-images.githubusercontent.com/77958988/113413529-88aa1900-93d8-11eb-9ff1-856634fc3535.png">
 
-<img width="792" alt="frontend6" src="https://user-images.githubusercontent.com/77958988/113413567-99f32580-93d8-11eb-9543-da052888a2e0.png">
+<img width="792" alt="frontend6" border="2" src="https://user-images.githubusercontent.com/77958988/113413567-99f32580-93d8-11eb-9543-da052888a2e0.png">
 
-<img width="792" alt="frontend6" src="https://user-images.githubusercontent.com/77958988/113413608-ac6d5f00-93d8-11eb-8568-5e9f1417c3f9.png">
+<img width="792" alt="frontend6" border="2" src="https://user-images.githubusercontent.com/77958988/113413608-ac6d5f00-93d8-11eb-8568-5e9f1417c3f9.png">
 
-<img width="944" alt="frontend7" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
+<img width="944" alt="frontend7" border="2" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
