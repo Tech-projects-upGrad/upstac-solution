@@ -107,7 +107,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 ````
 10.Create IAM role with AmazonEC2ContainerRegistryFullAccess  policy
-11.
+
 <img width="936" alt="iamrole" src="https://user-images.githubusercontent.com/77958988/113383306-49140a80-93a1-11eb-9a5e-5cf6b55e7157.png">
 
 
@@ -130,6 +130,26 @@ sudo ./aws/install
 
 
 
+11.Create repository for registration microservice of UPSTAC Application
+````
+ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name registration --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:976591367883:repository/registration",
+        "registryId": "976591367883",
+        "repositoryName": "registration",
+        "repositoryUri": "976591367883.dkr.ecr.us-east-1.amazonaws.com/registration",
+        "createdAt": "2021-04-02T05:10:30+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
 
+````
 
 
