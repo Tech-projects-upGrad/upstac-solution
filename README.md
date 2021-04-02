@@ -401,3 +401,8 @@ ubuntu@ip-172-31-47-81:~$
 <img width="792" alt="frontend6" border="2" src="https://user-images.githubusercontent.com/77958988/113413608-ac6d5f00-93d8-11eb-8568-5e9f1417c3f9.png">
 
 <img width="944" alt="frontend7" border="2" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
+
+21.Create security group for UPSTAC Application
+
+
+22. Create Application load balancer and target group with routing rule for frontend service
