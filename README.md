@@ -414,12 +414,21 @@ ubuntu@ip-172-31-47-81:~$
 
 22. Create Application load balancer and target group with routing rule for frontend service
 <img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
+
 <img width="884" alt="lb2" src="https://user-images.githubusercontent.com/77958988/113416797-a7f87480-93df-11eb-9077-7da5d0ddf497.png">
+
 <img width="872" alt="lb3" src="https://user-images.githubusercontent.com/77958988/113416822-b6469080-93df-11eb-9f7b-0587101d441f.png">
+
 <img width="796" alt="lb4" src="https://user-images.githubusercontent.com/77958988/113416848-c3637f80-93df-11eb-8b60-79a2031b1ff6.png">
+
 <img width="930" alt="lb5" src="https://user-images.githubusercontent.com/77958988/113416871-d37b5f00-93df-11eb-89ef-2ec21f104673.png">
+
 <img width="938" alt="lb6" src="https://user-images.githubusercontent.com/77958988/113416895-e130e480-93df-11eb-9265-cd57a82c7fbb.png">
+
 <img width="941" alt="lb7" src="https://user-images.githubusercontent.com/77958988/113418718-a761dd00-93e3-11eb-89dd-b3db6bb5f598.png">
+
 <img width="943" alt="lb8" src="https://user-images.githubusercontent.com/77958988/113418742-b3e63580-93e3-11eb-88d2-1717f00aa612.png">
+
 <img width="938" alt="lb9" src="https://user-images.githubusercontent.com/77958988/113418780-c1032480-93e3-11eb-8d10-f5e2f4f1feb6.png">
+
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
