@@ -444,10 +444,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 24. Create cluster for launching microservices of UPSTAC Application.
 
 <img width="1028" alt="cluster1" src="https://user-images.githubusercontent.com/77958988/113430592-121d1380-93f8-11eb-842a-fa459558da6b.png">
-
 <img width="697" alt="cluster2" src="https://user-images.githubusercontent.com/77958988/113430648-23feb680-93f8-11eb-88ae-fc108973869d.png">
-
 <img width="766" alt="cluster3" src="https://user-images.githubusercontent.com/77958988/113430678-2fea7880-93f8-11eb-859a-26c9c0121d07.png">
-
 <img width="933" alt="cluster4" src="https://user-images.githubusercontent.com/77958988/113430708-3aa50d80-93f8-11eb-8727-4dfb876cad4f.png">
 
