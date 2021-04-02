@@ -303,7 +303,22 @@ ubuntu@ip-172-31-47-81:~$
 <img width="917" alt="ecsrole5" src="https://user-images.githubusercontent.com/77958988/113393439-4cfd5800-93b4-11eb-9594-4151cf01f3be.png">
 
 
-17. Create Task definition for MySQL
+17. Create ecsAutoscaleRole with AutoScalingFullAccess & AmazonEC2ContainerServiceAutoscaleRole
+<img width="960" alt="scale1" src="https://user-images.githubusercontent.com/77958988/113405264-2f85b980-93c7-11eb-8dea-d0b1f78d09dc.png">
+
+<img width="826" alt="scale2" src="https://user-images.githubusercontent.com/77958988/113405329-49270100-93c7-11eb-9c7d-3c7f4c0f2678.png">
+
+<img width="869" alt="scale3" src="https://user-images.githubusercontent.com/77958988/113405364-5b08a400-93c7-11eb-831f-6bed45a19f81.png">
+
+<img width="938" alt="scale4" src="https://user-images.githubusercontent.com/77958988/113405400-6bb91a00-93c7-11eb-86df-de6df9306c98.png">
+
+<img width="951" alt="scale5" src="https://user-images.githubusercontent.com/77958988/113405455-825f7100-93c7-11eb-9c69-7939d724ecbb.png">
+
+<img width="918" alt="scale6" src="https://user-images.githubusercontent.com/77958988/113405518-96a36e00-93c7-11eb-82ff-164478be5956.png">
+
+<img width="932" alt="scale7" src="https://user-images.githubusercontent.com/77958988/113405551-a753e400-93c7-11eb-80c7-fbe1e00fe6cc.png">
+
+18. Create Task definition for MySQL
 
 18. Create Task definition for Registration
 
