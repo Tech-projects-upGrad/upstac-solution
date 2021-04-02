@@ -292,12 +292,23 @@ ubuntu@ip-172-31-47-81:~$
 
 16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy 
 
-18. Create Task definition for MySQL
+<img width="867" alt="ecsrole1" src="https://user-images.githubusercontent.com/77958988/113393258-07d92600-93b4-11eb-9d13-f7d243ee066e.png">
 
-17. Create Task definition for Registration
+<img width="803" alt="ecsrole2" src="https://user-images.githubusercontent.com/77958988/113393305-1a535f80-93b4-11eb-9d85-d20b904edb32.png">
 
-18. Create Task definition for Document
+<img width="825" alt="ecsrole3" src="https://user-images.githubusercontent.com/77958988/113393353-2ccd9900-93b4-11eb-8a08-e83f7bddf7cb.png">
 
-19. Create Task definition for master
+<img width="800" alt="ecsrole4" src="https://user-images.githubusercontent.com/77958988/113393406-3fe06900-93b4-11eb-8b09-ffcd173199ac.png">
+
+<img width="917" alt="ecsrole5" src="https://user-images.githubusercontent.com/77958988/113393439-4cfd5800-93b4-11eb-9594-4151cf01f3be.png">
+
+
+17. Create Task definition for MySQL
+
+18. Create Task definition for Registration
+
+19. Create Task definition for Document
+
+20. Create Task definition for master
 
 20. Create Task definition for Frontend
