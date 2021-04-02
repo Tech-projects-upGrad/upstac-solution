@@ -149,6 +149,20 @@ ubuntu@ip-172-31-47-81:~$ aws ecr create-repository --repository-name registrati
         }
     }
 }
+ubuntu@ip-172-31-47-81:~$ sudo docker tag 9968ab95c134 976591367883.dkr.ecr.us-east-1.amazonaws.com/registration
+ubuntu@ip-172-31-47-81:~$ aws ecr get-login-password | sudo docker login --username AWS --password-stdin 976591367883.dkr.ecr.us-east-1.amazonaws.com/registration
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ip-172-31-47-81:~$ sudo docker push 976591367883.dkr.ecr.us-east-1.amazonaws.com/registration
+Using default tag: latest
+The push refers to repository [976591367883.dkr.ecr.us-east-1.amazonaws.com/registration]
+7b91809557c5: Pushed
+f199ad476e12: Pushed
+531743b7098c: Pushed
+latest: digest: sha256:a06813987fe12f3397df3cc24662ab7d057043ac86be83a01921dc15ec73e922 size: 953
 
 ````
 
