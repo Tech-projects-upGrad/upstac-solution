@@ -375,5 +375,29 @@ ubuntu@ip-172-31-47-81:~$
 
 
 20. Create Task definition for master
+<img width="815" alt="master1" src="https://user-images.githubusercontent.com/77958988/113413335-13d6df00-93d8-11eb-920f-9d73eeb52814.png">
+
+<img width="861" alt="master2" src="https://user-images.githubusercontent.com/77958988/113413351-1fc2a100-93d8-11eb-96d1-65d74ae15644.png">
+
+<img width="937" alt="master3" src="https://user-images.githubusercontent.com/77958988/113413366-2e10bd00-93d8-11eb-85e2-3553fb36ae0a.png">
+
+<img width="925" alt="master4" src="https://user-images.githubusercontent.com/77958988/113413391-3a951580-93d8-11eb-8b99-7d38a2f1617b.png">
+
+<img width="941" alt="master5" src="https://user-images.githubusercontent.com/77958988/113413414-48e33180-93d8-11eb-8a63-380344720f5b.png">
+
 
 20. Create Task definition for Frontend
+
+<img width="682" alt="frontend1" src="https://user-images.githubusercontent.com/77958988/113413455-60221f00-93d8-11eb-9b8d-7efda714c23a.png">
+
+<img width="835" alt="frontend2" src="https://user-images.githubusercontent.com/77958988/113413481-6f08d180-93d8-11eb-82fe-2592e9e45404.png">
+
+<img width="938" alt="frontend3" src="https://user-images.githubusercontent.com/77958988/113413500-7af49380-93d8-11eb-8617-caddecf29181.png">
+
+<img width="854" alt="frontend4" src="https://user-images.githubusercontent.com/77958988/113413529-88aa1900-93d8-11eb-9ff1-856634fc3535.png">
+
+<img width="792" alt="frontend6" src="https://user-images.githubusercontent.com/77958988/113413567-99f32580-93d8-11eb-9543-da052888a2e0.png">
+
+<img width="792" alt="frontend6" src="https://user-images.githubusercontent.com/77958988/113413608-ac6d5f00-93d8-11eb-8568-5e9f1417c3f9.png">
+
+<img width="944" alt="frontend7" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
