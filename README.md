@@ -413,6 +413,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="933" alt="tg4" src="https://user-images.githubusercontent.com/77958988/113416722-89927900-93df-11eb-8816-9eab82049a9e.png">
 
 22. Create Application load balancer and target group with routing rule for frontend service
+
 <img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
 
 <img width="884" alt="lb2" src="https://user-images.githubusercontent.com/77958988/113416797-a7f87480-93df-11eb-9077-7da5d0ddf497.png">
@@ -432,3 +433,10 @@ ubuntu@ip-172-31-47-81:~$
 <img width="938" alt="lb9" src="https://user-images.githubusercontent.com/77958988/113418780-c1032480-93e3-11eb-8d10-f5e2f4f1feb6.png">
 
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
+
+23. Install apache benchmark on ubuntu EC2 instance and pump traffic so as to reach the target threshold for CPU Utilization and trigger autoscaling
+    as well as email notification.
+    ````
+    sudo apt install apache2-utils
+    ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgrad.com:8090/auth/doctor/register
+    ````
