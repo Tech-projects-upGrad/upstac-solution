@@ -437,9 +437,8 @@ ubuntu@ip-172-31-47-81:~$
 23.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
      [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
      to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
-    
-    ````
-    sudo apt install apache2-utils
-    ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgrad.com:8090/auth/doctor/register
-    ````
+````
+sudo apt install apache2-utils
+ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgrad.com:8090/auth/doctor/register
+````
 24. 
