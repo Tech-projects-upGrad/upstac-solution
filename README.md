@@ -448,3 +448,21 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="766" alt="cluster3" src="https://user-images.githubusercontent.com/77958988/113430678-2fea7880-93f8-11eb-859a-26c9c0121d07.png">
 <img width="933" alt="cluster4" src="https://user-images.githubusercontent.com/77958988/113430708-3aa50d80-93f8-11eb-8727-4dfb876cad4f.png">
 
+25. Create mysql service witha single task with service discovery enabled,with appropriate namespace .
+<img width="778" alt="mysqlsvc1" src="https://user-images.githubusercontent.com/77958988/113434594-dfc2e480-93fe-11eb-80af-1d1209a56bc6.png">
+
+<img width="754" alt="mysqlsvc2" src="https://user-images.githubusercontent.com/77958988/113434620-ed786a00-93fe-11eb-919b-79aa16b01f9a.png">
+
+<img width="1354" alt="mysqlsvc3" src="https://user-images.githubusercontent.com/77958988/113434666-06811b00-93ff-11eb-92bf-fe17bd1257c1.png">
+
+<img width="1354" alt="mysqlsvc4" src="https://user-images.githubusercontent.com/77958988/113434782-36302300-93ff-11eb-88b0-a652124062e3.png">
+
+<img width="801" alt="mysqlsvc5" src="https://user-images.githubusercontent.com/77958988/113434826-47792f80-93ff-11eb-825a-58ae3bd8b9c6.png">
+
+<img width="733" alt="mysqlsvc6" src="https://user-images.githubusercontent.com/77958988/113434847-54961e80-93ff-11eb-9771-9e131abfd499.png">
+
+<img width="794" alt="mysqlsvc7" src="https://user-images.githubusercontent.com/77958988/113434900-6bd50c00-93ff-11eb-94b5-4be06cc3780b.png">
+
+<img width="806" alt="mysqlsvc8" src="https://user-images.githubusercontent.com/77958988/113434955-8313f980-93ff-11eb-92f1-305ab162e547.png">
+
+<img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
