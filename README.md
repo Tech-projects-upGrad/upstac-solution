@@ -295,4 +295,6 @@ ubuntu@ip-172-31-47-81:~$
 
 18. Create Task definition for Document
 
-19. Create Task definition for Frontend
+19. Create Task definition for master
+
+20. Create Task definition for Frontend
