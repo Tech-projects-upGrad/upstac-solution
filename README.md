@@ -320,6 +320,30 @@ ubuntu@ip-172-31-47-81:~$
 
 18. Create Task definition for MySQL
 
+<img width="882" alt="mysql1" src="https://user-images.githubusercontent.com/77958988/113406865-d703eb80-93c9-11eb-95a5-b93a83b06fbe.png">
+
+
+<img width="832" alt="mysql2" src="https://user-images.githubusercontent.com/77958988/113406889-e4b97100-93c9-11eb-910c-3a3b349d2e66.png">
+
+
+<img width="869" alt="mysql3" src="https://user-images.githubusercontent.com/77958988/113406924-f13dc980-93c9-11eb-9e70-005726683be9.png">
+
+
+<img width="921" alt="mysql4" src="https://user-images.githubusercontent.com/77958988/113406944-fd298b80-93c9-11eb-827b-e1a9d3ae302d.png">
+
+
+<img width="927" alt="mysql5" src="https://user-images.githubusercontent.com/77958988/113406965-061a5d00-93ca-11eb-83a3-21472b236e99.png">
+
+
+<img width="689" alt="mysql6" src="https://user-images.githubusercontent.com/77958988/113406990-13374c00-93ca-11eb-8881-ab2fcd7de6f2.png">
+
+
+<img width="944" alt="mysql7" src="https://user-images.githubusercontent.com/77958988/113407013-1f230e00-93ca-11eb-85f0-2b255780524c.png">
+
+
+
+
+
 18. Create Task definition for Registration
 
 19. Create Task definition for Document
