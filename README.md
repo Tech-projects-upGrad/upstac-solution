@@ -341,10 +341,23 @@ ubuntu@ip-172-31-47-81:~$
 <img width="944" alt="mysql7" src="https://user-images.githubusercontent.com/77958988/113407013-1f230e00-93ca-11eb-85f0-2b255780524c.png">
 
 
-
-
-
 18. Create Task definition for Registration
+
+
+<img width="869" alt="registration1" src="https://user-images.githubusercontent.com/77958988/113408297-bab57e00-93cc-11eb-9786-fa55ad7a079d.png">
+
+<img width="873" alt="registration2" src="https://user-images.githubusercontent.com/77958988/113408331-cb65f400-93cc-11eb-974f-75c12fdcb32a.png">
+
+<img width="930" alt="registration3" src="https://user-images.githubusercontent.com/77958988/113408385-e46ea500-93cc-11eb-8bb7-7fec5b62a1ff.png">
+
+<img width="930" alt="registration4" src="https://user-images.githubusercontent.com/77958988/113408425-f3555780-93cc-11eb-9922-7629c2033e22.png">
+
+<img width="717" alt="registration6" src="https://user-images.githubusercontent.com/77958988/113408449-023c0a00-93cd-11eb-83cf-e25863570359.png">
+
+<img width="717" alt="registration6" src="https://user-images.githubusercontent.com/77958988/113408504-18e26100-93cd-11eb-9c0f-a838f554dc11.png">
+
+<img width="938" alt="registration7" src="https://user-images.githubusercontent.com/77958988/113408536-2b5c9a80-93cd-11eb-8b06-56112e5deca4.png">
+
 
 19. Create Task definition for Document
 
