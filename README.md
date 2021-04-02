@@ -361,6 +361,19 @@ ubuntu@ip-172-31-47-81:~$
 
 19. Create Task definition for Document
 
+<img width="893" alt="document1" src="https://user-images.githubusercontent.com/77958988/113409713-842d3280-93cf-11eb-9074-5df80a0c2461.png">
+
+<img width="843" alt="document2" src="https://user-images.githubusercontent.com/77958988/113409744-927b4e80-93cf-11eb-99bf-9f456b5e311f.png">
+
+<img width="934" alt="document3" src="https://user-images.githubusercontent.com/77958988/113409771-a030d400-93cf-11eb-81cf-d653c3f6bebb.png">
+
+<img width="923" alt="document4" src="https://user-images.githubusercontent.com/77958988/113409803-ae7ef000-93cf-11eb-8b7f-959366a4f08c.png">
+
+<img width="770" alt="document5" src="https://user-images.githubusercontent.com/77958988/113409834-bdfe3900-93cf-11eb-9664-6c8e4973db4b.png">
+
+<img width="944" alt="document6" src="https://user-images.githubusercontent.com/77958988/113409881-ceaeaf00-93cf-11eb-8665-851afd47b092.png">
+
+
 20. Create Task definition for master
 
 20. Create Task definition for Frontend
