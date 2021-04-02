@@ -108,25 +108,25 @@ sudo ./aws/install
 ````
 10.Create IAM role with AmazonEC2ContainerRegistryFullAccess  policy
 11.
-<img width="862" alt="iamrole" src="https://user-images.githubusercontent.com/77958988/113383306-49140a80-93a1-11eb-9a5e-5cf6b55e7157.png">
+<img width="936" alt="iamrole" src="https://user-images.githubusercontent.com/77958988/113383306-49140a80-93a1-11eb-9a5e-5cf6b55e7157.png">
 
 
-<img width="800" alt="iampolicy" src="https://user-images.githubusercontent.com/77958988/113383864-6eeddf00-93a2-11eb-92f0-1e1d50c4de13.png">
+<img width="936" alt="iampolicy" src="https://user-images.githubusercontent.com/77958988/113383864-6eeddf00-93a2-11eb-92f0-1e1d50c4de13.png">
 
 
-<img width="726" alt="rolecreate" src="https://user-images.githubusercontent.com/77958988/113383887-8036eb80-93a2-11eb-845f-a3dce337250b.png">
+<img width="936" alt="rolecreate" src="https://user-images.githubusercontent.com/77958988/113383887-8036eb80-93a2-11eb-845f-a3dce337250b.png">
 
 
 <img width="936" alt="rolescraeted" src="https://user-images.githubusercontent.com/77958988/113383436-8bd5e280-93a1-11eb-9838-c84eb7c02b8b.png">
 
 
-<img width="942" alt="attachroletoinstance" src="https://user-images.githubusercontent.com/77958988/113383985-af4d5d00-93a2-11eb-8377-60c7463bd876.png">
+<img width="936" alt="attachroletoinstance" src="https://user-images.githubusercontent.com/77958988/113383985-af4d5d00-93a2-11eb-8377-60c7463bd876.png">
 
 
-<img width="702" alt="attachroletoinstance2" src="https://user-images.githubusercontent.com/77958988/113384020-c5f3b400-93a2-11eb-94ab-66956128f437.png">
+<img width="936" alt="attachroletoinstance2" src="https://user-images.githubusercontent.com/77958988/113384020-c5f3b400-93a2-11eb-94ab-66956128f437.png">
 
 
-<img width="796" alt="attachroletoinstance3" src="https://user-images.githubusercontent.com/77958988/113384062-dc017480-93a2-11eb-98a0-e05c9fcc478b.png">
+<img width="936" alt="attachroletoinstance3" src="https://user-images.githubusercontent.com/77958988/113384062-dc017480-93a2-11eb-98a0-e05c9fcc478b.png">
 
 
 
