@@ -466,3 +466,25 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="806" alt="mysqlsvc8" src="https://user-images.githubusercontent.com/77958988/113434955-8313f980-93ff-11eb-92f1-305ab162e547.png">
 
 <img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
+26. Create document service with a single task with service discovery enabled,with appropriate namespace .
+<img width="749" alt="docsvc1" src="https://user-images.githubusercontent.com/77958988/113470960-d6755e80-9476-11eb-96b1-6af515655d52.png">
+<img width="726" alt="docsvc2" src="https://user-images.githubusercontent.com/77958988/113470966-e42ae400-9476-11eb-82d6-0bbdbbe9e5cd.png">
+<img width="1354" alt="docsvc3" src="https://user-images.githubusercontent.com/77958988/113470973-f016a600-9476-11eb-8493-1410b9bb6533.png">
+<img width="852" alt="docsvc4" src="https://user-images.githubusercontent.com/77958988/113470979-fc026800-9476-11eb-9f43-2b39ae9a9de9.png">
+<img width="842" alt="docsvc5" src="https://user-images.githubusercontent.com/77958988/113470985-0886c080-9477-11eb-90da-73c6122cb648.png">
+<img width="810" alt="docsvc6" src="https://user-images.githubusercontent.com/77958988/113470995-15a3af80-9477-11eb-89a4-429a5a8221fd.png">
+<img width="752" alt="docsvc7" src="https://user-images.githubusercontent.com/77958988/113471003-20f6db00-9477-11eb-8c5a-1047f4751ff1.png">
+<img width="734" alt="docsvc8" src="https://user-images.githubusercontent.com/77958988/113471013-2e13ca00-9477-11eb-8de9-17129f6d1f75.png">
+<img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
+
+27. Create registration service with a single task with service discovery enabled,with appropriate namespace .
+<img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
+<img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
+<img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
+<img width="808" alt="regsvc4" src="https://user-images.githubusercontent.com/77958988/113471092-b5f9d400-9477-11eb-8efc-480504509b2b.png">
+<img width="808" alt="regsvc5" src="https://user-images.githubusercontent.com/77958988/113471101-c1e59600-9477-11eb-9169-ba09c266cb3e.png">
+<img width="846" alt="regsvc6" src="https://user-images.githubusercontent.com/77958988/113471108-d0cc4880-9477-11eb-8bba-8aeb992983d4.png">
+<img width="874" alt="regsvc7" src="https://user-images.githubusercontent.com/77958988/113471128-eb9ebd00-9477-11eb-9c3e-89e1da014336.png">
+<img width="787" alt="regsvc8" src="https://user-images.githubusercontent.com/77958988/113471136-f9544280-9477-11eb-813f-305213102ab0.png">
+<img width="876" alt="regsvc9" src="https://user-images.githubusercontent.com/77958988/113471167-328cb280-9478-11eb-812a-2ada44b14e5a.png">
+<img width="787" alt="regsvc10" src="https://user-images.githubusercontent.com/77958988/113471170-3fa9a180-9478-11eb-8d2c-8f8f9c71b6b9.png">
