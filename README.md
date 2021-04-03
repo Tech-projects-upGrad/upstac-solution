@@ -500,3 +500,11 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 
 29.Create master service with a single task with service discovery enabled,with appropriate namespace.
  
+<img width="727" alt="mastersvc" src="https://user-images.githubusercontent.com/77958988/113474976-a63ab980-9490-11eb-9674-bedf01424cbf.png">
+<img width="747" alt="mastersvc2" src="https://user-images.githubusercontent.com/77958988/113475138-632d1600-9491-11eb-99e8-1e83226c384f.png">
+<img width="932" alt="mastersvc3" src="https://user-images.githubusercontent.com/77958988/113475170-97a0d200-9491-11eb-91f6-667017957802.png">
+<img width="738" alt="mastersvc4" src="https://user-images.githubusercontent.com/77958988/113475193-b2734680-9491-11eb-9b6e-22b072684f60.png">
+<img width="748" alt="mastersvc5" src="https://user-images.githubusercontent.com/77958988/113475017-de41fc80-9490-11eb-86b7-74ff2c9e4596.png">
+<img width="740" alt="mastersvc6" src="https://user-images.githubusercontent.com/77958988/113475033-ea2dbe80-9490-11eb-8984-54d117f2421f.png">
+<img width="749" alt="mastersvc7" src="https://user-images.githubusercontent.com/77958988/113475044-f6198080-9490-11eb-8bce-3520503b5e25.png">
+<img width="936" alt="mastersvc8" src="https://user-images.githubusercontent.com/77958988/113475049-00d41580-9491-11eb-8e05-68ea84b3f7b8.png">
