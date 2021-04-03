@@ -434,21 +434,15 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
 
-23.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
-     [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
-     to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
-````
-sudo apt install apache2-utils
-ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgrad.com:8090/auth/doctor/register
-````
-24. Create cluster for launching microservices of UPSTAC Application.
+
+23. Create cluster for launching microservices of UPSTAC Application.
 
 <img width="1028" alt="cluster1" src="https://user-images.githubusercontent.com/77958988/113430592-121d1380-93f8-11eb-842a-fa459558da6b.png">
 <img width="697" alt="cluster2" src="https://user-images.githubusercontent.com/77958988/113430648-23feb680-93f8-11eb-88ae-fc108973869d.png">
 <img width="766" alt="cluster3" src="https://user-images.githubusercontent.com/77958988/113430678-2fea7880-93f8-11eb-859a-26c9c0121d07.png">
 <img width="933" alt="cluster4" src="https://user-images.githubusercontent.com/77958988/113430708-3aa50d80-93f8-11eb-8727-4dfb876cad4f.png">
 
-25. Create mysql service witha single task with service discovery enabled,with appropriate namespace .
+24. Create mysql service witha single task with service discovery enabled,with appropriate namespace .
 <img width="778" alt="mysqlsvc1" src="https://user-images.githubusercontent.com/77958988/113434594-dfc2e480-93fe-11eb-80af-1d1209a56bc6.png">
 
 <img width="754" alt="mysqlsvc2" src="https://user-images.githubusercontent.com/77958988/113434620-ed786a00-93fe-11eb-919b-79aa16b01f9a.png">
@@ -467,7 +461,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 
 <img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
 
-26. Create document service with a single task with service discovery enabled,with appropriate namespace .
+25. Create document service with a single task with service discovery enabled,with appropriate namespace .
 <img width="749" alt="docsvc1" src="https://user-images.githubusercontent.com/77958988/113470960-d6755e80-9476-11eb-96b1-6af515655d52.png">
 <img width="726" alt="docsvc2" src="https://user-images.githubusercontent.com/77958988/113470966-e42ae400-9476-11eb-82d6-0bbdbbe9e5cd.png">
 <img width="1354" alt="docsvc3" src="https://user-images.githubusercontent.com/77958988/113470973-f016a600-9476-11eb-8493-1410b9bb6533.png">
@@ -478,7 +472,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="734" alt="docsvc8" src="https://user-images.githubusercontent.com/77958988/113471013-2e13ca00-9477-11eb-8de9-17129f6d1f75.png">
 <img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
 
-27.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
+26.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
 
 <img width="710" alt="auto1" src="https://user-images.githubusercontent.com/77958988/113471335-4edd1f00-9479-11eb-9f19-da3733995866.png">
 <img width="684" alt="auto2" src="https://user-images.githubusercontent.com/77958988/113471343-5c92a480-9479-11eb-93fe-9f0b232b761f.png">
@@ -486,7 +480,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="906" alt="auto4" src="https://user-images.githubusercontent.com/77958988/113471365-72a06500-9479-11eb-918a-5f1bd5a116e4.png">
 <img width="935" alt="auto5" src="https://user-images.githubusercontent.com/77958988/113471373-7d5afa00-9479-11eb-9353-f810e7854736.png">
 
-28.Create registration service with a single task with service discovery enabled,with appropriate namespace .
+27.Create registration service with a single task with service discovery enabled,with appropriate namespace .
 <img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
 <img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
 <img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
@@ -498,7 +492,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="876" alt="regsvc9" src="https://user-images.githubusercontent.com/77958988/113471167-328cb280-9478-11eb-812a-2ada44b14e5a.png">
 <img width="787" alt="regsvc10" src="https://user-images.githubusercontent.com/77958988/113471170-3fa9a180-9478-11eb-8d2c-8f8f9c71b6b9.png">
 
-29.Create master service with a single task with service discovery enabled,with appropriate namespace.
+28.Create master service with a single task with service discovery enabled,with appropriate namespace.
  
 <img width="727" alt="mastersvc" src="https://user-images.githubusercontent.com/77958988/113474976-a63ab980-9490-11eb-9674-bedf01424cbf.png">
 <img width="747" alt="mastersvc2" src="https://user-images.githubusercontent.com/77958988/113475138-632d1600-9491-11eb-99e8-1e83226c384f.png">
@@ -508,7 +502,8 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="740" alt="mastersvc6" src="https://user-images.githubusercontent.com/77958988/113475033-ea2dbe80-9490-11eb-8984-54d117f2421f.png">
 <img width="749" alt="mastersvc7" src="https://user-images.githubusercontent.com/77958988/113475044-f6198080-9490-11eb-8bce-3520503b5e25.png">
 <img width="936" alt="mastersvc8" src="https://user-images.githubusercontent.com/77958988/113475049-00d41580-9491-11eb-8e05-68ea84b3f7b8.png">
-30.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
+
+29.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
 <img width="750" alt="frontendsvc1" src="https://user-images.githubusercontent.com/77958988/113477758-c8890300-94a1-11eb-940e-ba7e4047e51d.png">
 <img width="932" alt="frontendsvc2" src="https://user-images.githubusercontent.com/77958988/113477768-e22a4a80-94a1-11eb-9966-f23d06ce9feb.png">
 <img width="716" alt="frontendsvc3" src="https://user-images.githubusercontent.com/77958988/113477775-ed7d7600-94a1-11eb-879b-ee024a2a6f69.png">
@@ -518,3 +513,100 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="618" alt="frontendsvc7" src="https://user-images.githubusercontent.com/77958988/113477803-2584b900-94a2-11eb-9de9-796f921a7b1f.png">
 <img width="856" alt="frontendsvc8" src="https://user-images.githubusercontent.com/77958988/113477804-2fa6b780-94a2-11eb-81b4-898c7ba0c417.png">
 <img width="936" alt="frontendsvc9" src="https://user-images.githubusercontent.com/77958988/113477811-39c8b600-94a2-11eb-8822-60b18387fda3.png">
+
+
+30.  Use dig command to verify DNS resolution.
+<img width="935" alt="ecssvc" src="https://user-images.githubusercontent.com/77958988/113478150-a5ac1e00-94a4-11eb-9829-ed474484be62.png">
+
+````
+ubuntu@ip-172-31-47-81:~$ dig registration.upgrad.com
+
+; <<>> DiG 9.16.1-Ubuntu <<>> registration.upgrad.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9741
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;registration.upgrad.com.       IN      A
+
+;; ANSWER SECTION:
+registration.upgrad.com. 60     IN      A       172.31.90.219
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Sat Apr 03 12:22:39 UTC 2021
+;; MSG SIZE  rcvd: 68
+
+````
+31.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
+     [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
+     to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
+````
+ubuntu@ip-172-31-47-81:~$sudo apt install apache2-utils
+ubuntu@ip-172-31-47-81:~$ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgrad.com:8090/auth/doctor/register
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking registration.upgrad.com (be patient)
+
+
+Completed 5000 requests
+Completed 10000 requests
+Completed 15000 requests
+Completed 20000 requests
+Completed 25000 requests
+Completed 30000 requests
+Completed 35000 requests
+Completed 40000 requests
+Completed 45000 requests
+Completed 50000 requests
+Finished 50000 requests
+
+
+Server Software:
+Server Hostname:        registration.upgrad.com
+Server Port:            8090
+
+Document Path:          /auth/doctor/register
+Document Length:        224 bytes
+
+Concurrency Level:      100
+Time taken for tests:   353.687 seconds
+Complete requests:      50000
+Failed requests:        49999
+   (Connect: 0, Receive: 0, Length: 49999, Exceptions: 0)
+Non-2xx responses:      49999
+Total transferred:      24900079 bytes
+Total body sent:        22000000
+HTML transferred:       7250079 bytes
+Requests per second:    141.37 [#/sec] (mean)
+Time per request:       707.375 [ms] (mean)
+Time per request:       7.074 [ms] (mean, across all concurrent requests)
+Transfer rate:          68.75 [Kbytes/sec] received
+                        60.74 kb/s sent
+                        129.50 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    1   0.7      1      22
+Processing:    14  704 334.4    678    3630
+Waiting:       13  702 332.6    677    3630
+Total:         14  705 334.4    679    3631
+
+Percentage of the requests served within a certain time (ms)
+  50%    679
+  66%    808
+  75%    904
+  80%    977
+  90%   1144
+  95%   1300
+  98%   1497
+  99%   1623
+ 100%   3631 (longest request)
+ubuntu@ip-172-31-47-81:~$
+
+````
