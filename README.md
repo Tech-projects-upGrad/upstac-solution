@@ -541,7 +541,22 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 ;; MSG SIZE  rcvd: 68
 
 ````
-31.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
+
+31.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 %.
+<img width="936" alt="alarm2" src="https://user-images.githubusercontent.com/77958988/113479392-74375080-94ac-11eb-965d-45f395471834.png">
+<img width="776" alt="alarm3" src="https://user-images.githubusercontent.com/77958988/113479404-844f3000-94ac-11eb-9560-a0d248fe8198.png">
+<img width="857" alt="alarm4" src="https://user-images.githubusercontent.com/77958988/113479409-90d38880-94ac-11eb-85d1-d921e12b1380.png">
+<img width="836" alt="alarm5" src="https://user-images.githubusercontent.com/77958988/113479411-9c26b400-94ac-11eb-9cca-5d4eaa1e7802.png">
+<img width="853" alt="alarm6" src="https://user-images.githubusercontent.com/77958988/113479415-a5b01c00-94ac-11eb-977f-f99b22c80015.png">
+<img width="774" alt="alarm7" src="https://user-images.githubusercontent.com/77958988/113479422-aea0ed80-94ac-11eb-9b07-595b3bb1bf51.png">
+<img width="755" alt="alarm8" src="https://user-images.githubusercontent.com/77958988/113479437-beb8cd00-94ac-11eb-80fb-cb3828b1af99.png">
+<img width="674" alt="alarm9" src="https://user-images.githubusercontent.com/77958988/113479444-c8423500-94ac-11eb-84f7-3018e5d32b3d.png">
+<img width="688" alt="alarm10" src="https://user-images.githubusercontent.com/77958988/113479472-f162c580-94ac-11eb-9f34-511739c1fe03.png">
+<img width="675" alt="alarm11" src="https://user-images.githubusercontent.com/77958988/113479480-ffb0e180-94ac-11eb-9ef1-961ae7183eea.png">
+<img width="575" alt="alarm12" src="https://user-images.githubusercontent.com/77958988/113479723-46530b80-94ae-11eb-9152-43fe2820bc4d.png">
+<img width="934" alt="alarm13" src="https://user-images.githubusercontent.com/77958988/113479560-6f26d100-94ad-11eb-9671-8c1e62c43cd3.png">
+
+33.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
      [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
      to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
 ````
@@ -610,3 +625,7 @@ Percentage of the requests served within a certain time (ms)
 ubuntu@ip-172-31-47-81:~$
 
 ````
+34.Observe that alarm condition is reached for "upstac_regsvc_cpu_utilization_above_5percentage" alarm as well as autoscaling.registration microservice scales up and a email notification is received at email id configured in alarm
+<img width="938" alt="alarm14" src="https://user-images.githubusercontent.com/77958988/113479578-8239a100-94ad-11eb-86be-832d9b30cbf7.png">
+<img width="920" alt="alarm15" src="https://user-images.githubusercontent.com/77958988/113479587-8cf43600-94ad-11eb-8fea-bf8fc3ce966e.png">
+<img width="828" alt="alarm16" src="https://user-images.githubusercontent.com/77958988/113479602-a2696000-94ad-11eb-8c9e-09a73136d3e9.png">
