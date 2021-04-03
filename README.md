@@ -508,3 +508,13 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="740" alt="mastersvc6" src="https://user-images.githubusercontent.com/77958988/113475033-ea2dbe80-9490-11eb-8984-54d117f2421f.png">
 <img width="749" alt="mastersvc7" src="https://user-images.githubusercontent.com/77958988/113475044-f6198080-9490-11eb-8bce-3520503b5e25.png">
 <img width="936" alt="mastersvc8" src="https://user-images.githubusercontent.com/77958988/113475049-00d41580-9491-11eb-8e05-68ea84b3f7b8.png">
+30.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
+<img width="750" alt="frontendsvc1" src="https://user-images.githubusercontent.com/77958988/113477758-c8890300-94a1-11eb-940e-ba7e4047e51d.png">
+<img width="932" alt="frontendsvc2" src="https://user-images.githubusercontent.com/77958988/113477768-e22a4a80-94a1-11eb-9966-f23d06ce9feb.png">
+<img width="716" alt="frontendsvc3" src="https://user-images.githubusercontent.com/77958988/113477775-ed7d7600-94a1-11eb-879b-ee024a2a6f69.png">
+<img width="886" alt="frontendsvc4" src="https://user-images.githubusercontent.com/77958988/113477782-f8380b00-94a1-11eb-9fcd-cb5a052b76ec.png">
+<img width="710" alt="frontendsvc5" src="https://user-images.githubusercontent.com/77958988/113477789-0c7c0800-94a2-11eb-9c99-6819cac4f84e.png">
+<img width="767" alt="frontendsvc6" src="https://user-images.githubusercontent.com/77958988/113477796-1aca2400-94a2-11eb-9ce0-f69ce2cc66a8.png">
+<img width="618" alt="frontendsvc7" src="https://user-images.githubusercontent.com/77958988/113477803-2584b900-94a2-11eb-9de9-796f921a7b1f.png">
+<img width="856" alt="frontendsvc8" src="https://user-images.githubusercontent.com/77958988/113477804-2fa6b780-94a2-11eb-81b4-898c7ba0c417.png">
+<img width="936" alt="frontendsvc9" src="https://user-images.githubusercontent.com/77958988/113477811-39c8b600-94a2-11eb-8822-60b18387fda3.png">
