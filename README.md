@@ -486,7 +486,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="906" alt="auto4" src="https://user-images.githubusercontent.com/77958988/113471365-72a06500-9479-11eb-918a-5f1bd5a116e4.png">
 <img width="935" alt="auto5" src="https://user-images.githubusercontent.com/77958988/113471373-7d5afa00-9479-11eb-9353-f810e7854736.png">
 
-28.  Create registration service with a single task with service discovery enabled,with appropriate namespace .
+28.Create registration service with a single task with service discovery enabled,with appropriate namespace .
 <img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
 <img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
 <img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
@@ -497,3 +497,6 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="787" alt="regsvc8" src="https://user-images.githubusercontent.com/77958988/113471136-f9544280-9477-11eb-813f-305213102ab0.png">
 <img width="876" alt="regsvc9" src="https://user-images.githubusercontent.com/77958988/113471167-328cb280-9478-11eb-812a-2ada44b14e5a.png">
 <img width="787" alt="regsvc10" src="https://user-images.githubusercontent.com/77958988/113471170-3fa9a180-9478-11eb-8d2c-8f8f9c71b6b9.png">
+
+29.Create master service with a single task with service discovery enabled,with appropriate namespace.
+ 
