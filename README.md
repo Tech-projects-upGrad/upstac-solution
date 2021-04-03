@@ -466,6 +466,7 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="806" alt="mysqlsvc8" src="https://user-images.githubusercontent.com/77958988/113434955-8313f980-93ff-11eb-92f1-305ab162e547.png">
 
 <img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
+
 26. Create document service with a single task with service discovery enabled,with appropriate namespace .
 <img width="749" alt="docsvc1" src="https://user-images.githubusercontent.com/77958988/113470960-d6755e80-9476-11eb-96b1-6af515655d52.png">
 <img width="726" alt="docsvc2" src="https://user-images.githubusercontent.com/77958988/113470966-e42ae400-9476-11eb-82d6-0bbdbbe9e5cd.png">
@@ -477,7 +478,15 @@ ab -p register.json -T application/json -c 100 -n 50000 http://registration.upgr
 <img width="734" alt="docsvc8" src="https://user-images.githubusercontent.com/77958988/113471013-2e13ca00-9477-11eb-8de9-17129f6d1f75.png">
 <img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
 
-27. Create registration service with a single task with service discovery enabled,with appropriate namespace .
+27.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
+
+<img width="710" alt="auto1" src="https://user-images.githubusercontent.com/77958988/113471335-4edd1f00-9479-11eb-9f19-da3733995866.png">
+<img width="684" alt="auto2" src="https://user-images.githubusercontent.com/77958988/113471343-5c92a480-9479-11eb-93fe-9f0b232b761f.png">
+<img width="767" alt="auto3" src="https://user-images.githubusercontent.com/77958988/113471354-674d3980-9479-11eb-9cd3-a77548ee9feb.png">
+<img width="906" alt="auto4" src="https://user-images.githubusercontent.com/77958988/113471365-72a06500-9479-11eb-918a-5f1bd5a116e4.png">
+<img width="935" alt="auto5" src="https://user-images.githubusercontent.com/77958988/113471373-7d5afa00-9479-11eb-9353-f810e7854736.png">
+
+28.  Create registration service with a single task with service discovery enabled,with appropriate namespace .
 <img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
 <img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
 <img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
