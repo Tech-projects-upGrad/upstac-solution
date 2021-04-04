@@ -22,7 +22,7 @@ https://github.com/upgrad-edu/UPSTAC-Microservices-Backend/
 <img width="913" alt="storage" src="https://user-images.githubusercontent.com/77958988/113336199-a37e7e00-9343-11eb-8d49-9caf11e6d46a.png">
 
 
-2.Clone Frontend and backend code of UPSTAC application
+2.Clone Frontend and backend code of UPSTAC application on ubuntu compute instance.
 ````
 ubuntu@ip-172-31-47-81:~$ git clone https://github.com/upgrad-edu/UPSTAC-Microservices-Frontend.git
 Cloning into 'UPSTAC-Microservices-Frontend'...
@@ -49,18 +49,18 @@ UPSTAC-Microservices-Backend  UPSTAC-Microservices-Frontend
 
 
 ````
-3.Install Maven and docker (https://docs.docker.com/engine/install/ubuntu/) on ubuntu.
+3.Install Maven and docker (https://docs.docker.com/engine/install/ubuntu/) on ubuntu compute instance.
 
 Maven installation:
 ````
 sudo apt update
 sudo apt install maven
 ````
-4.Create jar files for the backend microservices .
+4.Create jar files for the backend microservices using below command.
 ````
 mvn clean package install spring-boot:repackage -Pprod
 ````
-5.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend.
+5.Write Dockerfile for frontend and place it in UPSTAC-Microservices-Frontend folder.
 Dockerfile:
 ````
 FROM node:10
@@ -76,7 +76,7 @@ EXPOSE 3000
 # Finally runs the application
 CMD [ "npm", "start" ]
 ````
-6.Write Dockerfile's for backend microservice's(document,master & register )and place them in corresponding folders in UPSTAC-Microservices-Backend.
+6.Write Dockerfile's for backend microservice's(document,master & register )and place them in corresponding folders in UPSTAC-Microservices-Backend folder.
 Dockerfile:
 ````
 FROM openjdk:14-jdk-alpine
@@ -88,12 +88,12 @@ EXPOSE 8080
 ENTRYPOINT [ "java", "-jar", "/opt/app/upstac-api-0.0.1-SNAPSHOT.jar"]
 
 ````
-7.Create docker image for frontend.
+7.Create docker image for frontend using below command.
 
 ````
 UPSTAC-Microservices-Frontend$sudo docker build -t vaishalinankani08/upstac-frontend .
 ````
-8.Create docker image's for backend microservices i.e. document , master & registeration.
+8.Create docker image's for backend microservices i.e. document , master & registeration using below command.
 
 ````
 UPSTAC-Microservices-Backend/upstac-api-document$sudo docker build -t vaishalinankani08/upstac-document .
@@ -107,7 +107,8 @@ sudo apt install unzip
 unzip awscliv2.zip
 sudo ./aws/install
 ````
-10.Create IAM role with AmazonEC2ContainerRegistryFullAccess  policy
+10.Create IAM role with AmazonEC2ContainerRegistryFullAccess  policy and attach it to th ubuntu EC2 instance.This is required so that
+ docker images created for UPSTAC application can be pushed to ECR.
 
 <img width="936" alt="iamrole" src="https://user-images.githubusercontent.com/77958988/113383306-49140a80-93a1-11eb-9a5e-5cf6b55e7157.png">
 
@@ -291,7 +292,7 @@ ubuntu@ip-172-31-47-81:~$
 ![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
 
 
-16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy 
+16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy .
 
 <img width="867" alt="ecsrole1" src="https://user-images.githubusercontent.com/77958988/113393258-07d92600-93b4-11eb-9d13-f7d243ee066e.png">
 
@@ -303,23 +304,7 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="917" alt="ecsrole5" src="https://user-images.githubusercontent.com/77958988/113393439-4cfd5800-93b4-11eb-9594-4151cf01f3be.png">
 
-
-17. Create ecsAutoscaleRole with AutoScalingFullAccess & AmazonEC2ContainerServiceAutoscaleRole
-<img width="960" alt="scale1" src="https://user-images.githubusercontent.com/77958988/113405264-2f85b980-93c7-11eb-8dea-d0b1f78d09dc.png">
-
-<img width="826" alt="scale2" src="https://user-images.githubusercontent.com/77958988/113405329-49270100-93c7-11eb-9c7d-3c7f4c0f2678.png">
-
-<img width="869" alt="scale3" src="https://user-images.githubusercontent.com/77958988/113405364-5b08a400-93c7-11eb-831f-6bed45a19f81.png">
-
-<img width="938" alt="scale4" src="https://user-images.githubusercontent.com/77958988/113405400-6bb91a00-93c7-11eb-86df-de6df9306c98.png">
-
-<img width="951" alt="scale5" src="https://user-images.githubusercontent.com/77958988/113405455-825f7100-93c7-11eb-9c69-7939d724ecbb.png">
-
-<img width="918" alt="scale6" src="https://user-images.githubusercontent.com/77958988/113405518-96a36e00-93c7-11eb-82ff-164478be5956.png">
-
-<img width="932" alt="scale7" src="https://user-images.githubusercontent.com/77958988/113405551-a753e400-93c7-11eb-80c7-fbe1e00fe6cc.png">
-
-18. Create Task definition for MySQL
+17. Create Task definition for MySQL
 
 <img width="882" alt="mysql1" src="https://user-images.githubusercontent.com/77958988/113406865-d703eb80-93c9-11eb-95a5-b93a83b06fbe.png">
 
@@ -387,7 +372,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="941" alt="master5" src="https://user-images.githubusercontent.com/77958988/113413414-48e33180-93d8-11eb-8a63-380344720f5b.png">
 
 
-20. Create Task definition for Frontend
+21. Create Task definition for Frontend
 
 <img width="682" alt="frontend1" border="2" src="https://user-images.githubusercontent.com/77958988/113413455-60221f00-93d8-11eb-9b8d-7efda714c23a.png">
 
@@ -403,7 +388,7 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="944" alt="frontend7" border="2" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
 
-21.Create security group for UPSTAC Application
+22.Create security group for UPSTAC Application
 
 <img width="935" alt="tg1" src="https://user-images.githubusercontent.com/77958988/113416623-5819ad80-93df-11eb-876c-3c7d920e9d2a.png">
 
@@ -413,7 +398,7 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="933" alt="tg4" src="https://user-images.githubusercontent.com/77958988/113416722-89927900-93df-11eb-8816-9eab82049a9e.png">
 
-22. Create Application load balancer and target group with routing rule for frontend service
+23. Create Application load balancer and target group with routing rule for frontend service
 
 <img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
 
@@ -436,14 +421,14 @@ ubuntu@ip-172-31-47-81:~$
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
 
 
-23. Create cluster for launching microservices of UPSTAC Application.
+24. Create cluster for launching microservices of UPSTAC Application.
 
 <img width="1028" alt="cluster1" src="https://user-images.githubusercontent.com/77958988/113430592-121d1380-93f8-11eb-842a-fa459558da6b.png">
 <img width="697" alt="cluster2" src="https://user-images.githubusercontent.com/77958988/113430648-23feb680-93f8-11eb-88ae-fc108973869d.png">
 <img width="766" alt="cluster3" src="https://user-images.githubusercontent.com/77958988/113430678-2fea7880-93f8-11eb-859a-26c9c0121d07.png">
 <img width="933" alt="cluster4" src="https://user-images.githubusercontent.com/77958988/113430708-3aa50d80-93f8-11eb-8727-4dfb876cad4f.png">
 
-24. Create mysql service witha single task with service discovery enabled,with appropriate namespace .
+25. Create mysql service with a single task with service discovery enabled,with appropriate namespace .
 <img width="778" alt="mysqlsvc1" src="https://user-images.githubusercontent.com/77958988/113434594-dfc2e480-93fe-11eb-80af-1d1209a56bc6.png">
 
 <img width="754" alt="mysqlsvc2" src="https://user-images.githubusercontent.com/77958988/113434620-ed786a00-93fe-11eb-919b-79aa16b01f9a.png">
@@ -462,7 +447,7 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
 
-25. Create document service with a single task with service discovery enabled,with appropriate namespace .
+26. Create document service with a single task with service discovery enabled,with appropriate namespace .
 <img width="749" alt="docsvc1" src="https://user-images.githubusercontent.com/77958988/113470960-d6755e80-9476-11eb-96b1-6af515655d52.png">
 <img width="726" alt="docsvc2" src="https://user-images.githubusercontent.com/77958988/113470966-e42ae400-9476-11eb-82d6-0bbdbbe9e5cd.png">
 <img width="1354" alt="docsvc3" src="https://user-images.githubusercontent.com/77958988/113470973-f016a600-9476-11eb-8493-1410b9bb6533.png">
@@ -472,8 +457,21 @@ ubuntu@ip-172-31-47-81:~$
 <img width="752" alt="docsvc7" src="https://user-images.githubusercontent.com/77958988/113471003-20f6db00-9477-11eb-8c5a-1047f4751ff1.png">
 <img width="734" alt="docsvc8" src="https://user-images.githubusercontent.com/77958988/113471013-2e13ca00-9477-11eb-8de9-17129f6d1f75.png">
 <img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
+27. Create ecsAutoscaleRole with AutoScalingFullAccess & AmazonEC2ContainerServiceAutoscaleRole
+<img width="960" alt="scale1" src="https://user-images.githubusercontent.com/77958988/113405264-2f85b980-93c7-11eb-8dea-d0b1f78d09dc.png">
 
-26.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
+<img width="826" alt="scale2" src="https://user-images.githubusercontent.com/77958988/113405329-49270100-93c7-11eb-9c7d-3c7f4c0f2678.png">
+
+<img width="869" alt="scale3" src="https://user-images.githubusercontent.com/77958988/113405364-5b08a400-93c7-11eb-831f-6bed45a19f81.png">
+
+<img width="938" alt="scale4" src="https://user-images.githubusercontent.com/77958988/113405400-6bb91a00-93c7-11eb-86df-de6df9306c98.png">
+
+<img width="951" alt="scale5" src="https://user-images.githubusercontent.com/77958988/113405455-825f7100-93c7-11eb-9c69-7939d724ecbb.png">
+
+<img width="918" alt="scale6" src="https://user-images.githubusercontent.com/77958988/113405518-96a36e00-93c7-11eb-82ff-164478be5956.png">
+
+<img width="932" alt="scale7" src="https://user-images.githubusercontent.com/77958988/113405551-a753e400-93c7-11eb-80c7-fbe1e00fe6cc.png">
+28.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
 
 <img width="710" alt="auto1" src="https://user-images.githubusercontent.com/77958988/113471335-4edd1f00-9479-11eb-9f19-da3733995866.png">
 <img width="684" alt="auto2" src="https://user-images.githubusercontent.com/77958988/113471343-5c92a480-9479-11eb-93fe-9f0b232b761f.png">
@@ -481,7 +479,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="906" alt="auto4" src="https://user-images.githubusercontent.com/77958988/113471365-72a06500-9479-11eb-918a-5f1bd5a116e4.png">
 <img width="935" alt="auto5" src="https://user-images.githubusercontent.com/77958988/113471373-7d5afa00-9479-11eb-9353-f810e7854736.png">
 
-27.Create registration service with a single task with service discovery enabled,with appropriate namespace .
+29.Create registration service with a single task with service discovery enabled,with appropriate namespace .
 <img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
 <img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
 <img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
@@ -493,7 +491,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="876" alt="regsvc9" src="https://user-images.githubusercontent.com/77958988/113471167-328cb280-9478-11eb-812a-2ada44b14e5a.png">
 <img width="787" alt="regsvc10" src="https://user-images.githubusercontent.com/77958988/113471170-3fa9a180-9478-11eb-8d2c-8f8f9c71b6b9.png">
 
-28.Create master service with a single task with service discovery enabled,with appropriate namespace.
+30.Create master service with a single task with service discovery enabled,with appropriate namespace.
  
 <img width="727" alt="mastersvc" src="https://user-images.githubusercontent.com/77958988/113474976-a63ab980-9490-11eb-9674-bedf01424cbf.png">
 <img width="747" alt="mastersvc2" src="https://user-images.githubusercontent.com/77958988/113475138-632d1600-9491-11eb-99e8-1e83226c384f.png">
@@ -504,7 +502,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="749" alt="mastersvc7" src="https://user-images.githubusercontent.com/77958988/113475044-f6198080-9490-11eb-8bce-3520503b5e25.png">
 <img width="936" alt="mastersvc8" src="https://user-images.githubusercontent.com/77958988/113475049-00d41580-9491-11eb-8e05-68ea84b3f7b8.png">
 
-29.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
+31.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
 <img width="750" alt="frontendsvc1" src="https://user-images.githubusercontent.com/77958988/113477758-c8890300-94a1-11eb-940e-ba7e4047e51d.png">
 <img width="932" alt="frontendsvc2" src="https://user-images.githubusercontent.com/77958988/113477768-e22a4a80-94a1-11eb-9966-f23d06ce9feb.png">
 <img width="716" alt="frontendsvc3" src="https://user-images.githubusercontent.com/77958988/113477775-ed7d7600-94a1-11eb-879b-ee024a2a6f69.png">
@@ -516,7 +514,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="936" alt="frontendsvc9" src="https://user-images.githubusercontent.com/77958988/113477811-39c8b600-94a2-11eb-8822-60b18387fda3.png">
 
 
-30.  Use dig command to verify DNS resolution.
+32.  Use dig command to verify DNS resolution.
 <img width="935" alt="ecssvc" src="https://user-images.githubusercontent.com/77958988/113478150-a5ac1e00-94a4-11eb-9829-ed474484be62.png">
 
 ````
@@ -543,7 +541,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 
 ````
 
-31.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 %.
+33.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 %.
 <img width="936" alt="alarm2" src="https://user-images.githubusercontent.com/77958988/113479392-74375080-94ac-11eb-965d-45f395471834.png">
 <img width="776" alt="alarm3" src="https://user-images.githubusercontent.com/77958988/113479404-844f3000-94ac-11eb-9560-a0d248fe8198.png">
 <img width="857" alt="alarm4" src="https://user-images.githubusercontent.com/77958988/113479409-90d38880-94ac-11eb-85d1-d921e12b1380.png">
@@ -557,7 +555,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 <img width="575" alt="alarm12" src="https://user-images.githubusercontent.com/77958988/113479723-46530b80-94ae-11eb-9152-43fe2820bc4d.png">
 <img width="934" alt="alarm13" src="https://user-images.githubusercontent.com/77958988/113479560-6f26d100-94ad-11eb-9671-8c1e62c43cd3.png">
 
-33.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
+34.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
      [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
      to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
 ````
@@ -626,7 +624,7 @@ Percentage of the requests served within a certain time (ms)
 ubuntu@ip-172-31-47-81:~$
 
 ````
-34.Observe that alarm condition is reached for "upstac_regsvc_cpu_utilization_above_5percentage" alarm as well as autoscaling.registration microservice scales up and a email notification is received at email id configured in alarm
+35.Observe that alarm condition is reached for "upstac_regsvc_cpu_utilization_above_5percentage" alarm as well as autoscaling.registration microservice scales up and a email notification is received at email id configured in alarm
 <img width="938" alt="alarm14" src="https://user-images.githubusercontent.com/77958988/113479578-8239a100-94ad-11eb-86be-832d9b30cbf7.png">
 <img width="920" alt="alarm15" src="https://user-images.githubusercontent.com/77958988/113479587-8cf43600-94ad-11eb-8fea-bf8fc3ce966e.png">
 <img width="828" alt="alarm16" src="https://user-images.githubusercontent.com/77958988/113479602-a2696000-94ad-11eb-8c9e-09a73136d3e9.png">
