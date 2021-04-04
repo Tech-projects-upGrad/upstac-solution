@@ -631,5 +631,5 @@ ubuntu@ip-172-31-47-81:~$
 <img width="828" alt="alarm16" src="https://user-images.githubusercontent.com/77958988/113479602-a2696000-94ad-11eb-8c9e-09a73136d3e9.png">
 
 Email Notification:
-<img width="927" alt="alarm17" src="https://user-images.githubusercontent.com/77958988/113482097-acde2680-94ba-11eb-9138-372e5381aa1c.png">
+![alarm17](https://user-images.githubusercontent.com/77958988/113501300-a5ae2b80-9541-11eb-875c-279be0244011.png)
 <img width="812" alt="alarm18" src="https://user-images.githubusercontent.com/77958988/113482115-be273300-94ba-11eb-90b5-414f8793f49f.png">
