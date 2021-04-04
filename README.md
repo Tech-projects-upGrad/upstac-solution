@@ -559,7 +559,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 ;; MSG SIZE  rcvd: 68
 
 ````
-
+# Task6
 33.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 % for clustername=upstac and servicename=registration.
 <img width="936" alt="alarm2" src="https://user-images.githubusercontent.com/77958988/113479392-74375080-94ac-11eb-965d-45f395471834.png">
 <img width="776" alt="alarm3" src="https://user-images.githubusercontent.com/77958988/113479404-844f3000-94ac-11eb-9560-a0d248fe8198.png">
