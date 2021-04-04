@@ -304,7 +304,11 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="917" alt="ecsrole5" src="https://user-images.githubusercontent.com/77958988/113393439-4cfd5800-93b4-11eb-9594-4151cf01f3be.png">
 
-17. Create Task definition for MySQL
+17. Create Task definition for MySQL.set environment variables
+MYSQL_ROOT_PASSWORD=password 
+MYSQL_DATABASE=upgradpg  
+MYSQL_USER=upgradpg  
+MYSQL_PASSWORD=upgradpg
 
 <img width="882" alt="mysql1" src="https://user-images.githubusercontent.com/77958988/113406865-d703eb80-93c9-11eb-95a5-b93a83b06fbe.png">
 
@@ -327,8 +331,9 @@ ubuntu@ip-172-31-47-81:~$
 <img width="944" alt="mysql7" src="https://user-images.githubusercontent.com/77958988/113407013-1f230e00-93ca-11eb-85f0-2b255780524c.png">
 
 
-18. Create Task definition for Registration
-
+18. Create Task definition for Registration.set enviornment variables  MASTER_SVC_HOST =master.upgrad.com 
+   where upgrad.com is the namespace used for service deployment and master is the name of master service .& MYSQL_HOST=mysql.upgrad.com
+   represents mysql service in upgrad.com namespace.
 
 <img width="869" alt="registration1" src="https://user-images.githubusercontent.com/77958988/113408297-bab57e00-93cc-11eb-9786-fa55ad7a079d.png">
 
@@ -345,7 +350,9 @@ ubuntu@ip-172-31-47-81:~$
 <img width="938" alt="registration7" src="https://user-images.githubusercontent.com/77958988/113408536-2b5c9a80-93cd-11eb-8b06-56112e5deca4.png">
 
 
-19. Create Task definition for Document
+19. Create Task definition for Document.set enviornment variables MASTER_SVC_HOST =master.upgrad.com 
+   where upgrad.com is the namespace used for service deployment and master is the name of master service & MYSQL_HOST=mysql.upgrad.com
+   represents mysql service in upgrad.com namespace.
 
 <img width="893" alt="document1" src="https://user-images.githubusercontent.com/77958988/113409713-842d3280-93cf-11eb-9074-5df80a0c2461.png">
 
@@ -360,7 +367,8 @@ ubuntu@ip-172-31-47-81:~$
 <img width="944" alt="document6" src="https://user-images.githubusercontent.com/77958988/113409881-ceaeaf00-93cf-11eb-8665-851afd47b092.png">
 
 
-20. Create Task definition for master
+20. Create Task definition for master service .set enviornment variable MYSQL_HOST=mysql.upgrad.com that
+   represents mysql service in upgrad.com namespace .
 <img width="815" alt="master1" src="https://user-images.githubusercontent.com/77958988/113413335-13d6df00-93d8-11eb-920f-9d73eeb52814.png">
 
 <img width="861" alt="master2" src="https://user-images.githubusercontent.com/77958988/113413351-1fc2a100-93d8-11eb-96d1-65d74ae15644.png">
@@ -372,8 +380,11 @@ ubuntu@ip-172-31-47-81:~$
 <img width="941" alt="master5" src="https://user-images.githubusercontent.com/77958988/113413414-48e33180-93d8-11eb-8a63-380344720f5b.png">
 
 
-21. Create Task definition for Frontend
-
+21. Create Task definition for Frontend .Set enviornment variables 
+   REACT_APP_ROOTURL= frontend.upgrad.com
+   REACT_APP_DOCSVC_HOST=document.upgrad.com 
+   REACT_APP_REGSVC_HOST=registration.upgrad.com 
+   REACT_APP_MASTERSVC_HOST=master.upgrad.com
 <img width="682" alt="frontend1" border="2" src="https://user-images.githubusercontent.com/77958988/113413455-60221f00-93d8-11eb-9b8d-7efda714c23a.png">
 
 <img width="835" alt="frontend2" border="2" src="https://user-images.githubusercontent.com/77958988/113413481-6f08d180-93d8-11eb-82fe-2592e9e45404.png">
@@ -448,6 +459,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="921" alt="mysqlsvc9" src="https://user-images.githubusercontent.com/77958988/113434985-93c46f80-93ff-11eb-977c-461f46749607.png">
 
 26. Create document service with a single task with service discovery enabled,with appropriate namespace .
+
 <img width="749" alt="docsvc1" src="https://user-images.githubusercontent.com/77958988/113470960-d6755e80-9476-11eb-96b1-6af515655d52.png">
 <img width="726" alt="docsvc2" src="https://user-images.githubusercontent.com/77958988/113470966-e42ae400-9476-11eb-82d6-0bbdbbe9e5cd.png">
 <img width="1354" alt="docsvc3" src="https://user-images.githubusercontent.com/77958988/113470973-f016a600-9476-11eb-8493-1410b9bb6533.png">
@@ -457,6 +469,7 @@ ubuntu@ip-172-31-47-81:~$
 <img width="752" alt="docsvc7" src="https://user-images.githubusercontent.com/77958988/113471003-20f6db00-9477-11eb-8c5a-1047f4751ff1.png">
 <img width="734" alt="docsvc8" src="https://user-images.githubusercontent.com/77958988/113471013-2e13ca00-9477-11eb-8de9-17129f6d1f75.png">
 <img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
+
 27. Create ecsAutoscaleRole with AutoScalingFullAccess & AmazonEC2ContainerServiceAutoscaleRole
 <img width="960" alt="scale1" src="https://user-images.githubusercontent.com/77958988/113405264-2f85b980-93c7-11eb-8dea-d0b1f78d09dc.png">
 
