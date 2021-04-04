@@ -12,7 +12,7 @@ Original github link:
 https://github.com/upgrad-edu/UPSTAC-Microservices-Frontend
 
 https://github.com/upgrad-edu/UPSTAC-Microservices-Backend/
-
+# Task1
 1.Ubuntu 20.04 compute instance is used for this exercise
 <img width="932" alt="ubuntuami" src="https://user-images.githubusercontent.com/77958988/113335071-1686f500-9342-11eb-8ca3-2e36b6a3260d.png">
 
@@ -21,7 +21,7 @@ https://github.com/upgrad-edu/UPSTAC-Microservices-Backend/
 
 <img width="913" alt="storage" src="https://user-images.githubusercontent.com/77958988/113336199-a37e7e00-9343-11eb-8d49-9caf11e6d46a.png">
 
-
+# Task2
 2.Clone Frontend and backend code of UPSTAC application on ubuntu compute instance.
 ````
 ubuntu@ip-172-31-47-81:~$ git clone https://github.com/upgrad-edu/UPSTAC-Microservices-Frontend.git
@@ -100,6 +100,7 @@ UPSTAC-Microservices-Backend/upstac-api-document$sudo docker build -t vaishalina
 UPSTAC-Microservices-Backend/upstac-api-register$sudo docker build -t vaishalinankani08/upstac-registration .
 UPSTAC-Microservices-Backend/upstac-api-master$sudo docker build -t vaishalinankani08/upstac-master .
 ````
+# Task3
 9.Install aws cli on ubuntu compute instance
 ````
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -291,7 +292,7 @@ ubuntu@ip-172-31-47-81:~$
 15. Verify that repositories are created from AWS console for ECR
 ![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
 
-
+# Task4
 16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy .
 
 <img width="867" alt="ecsrole1" src="https://user-images.githubusercontent.com/77958988/113393258-07d92600-93b4-11eb-9d13-f7d243ee066e.png">
