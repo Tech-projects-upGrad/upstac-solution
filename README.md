@@ -381,7 +381,8 @@ MYSQL_PASSWORD=upgradpg
 <img width="941" alt="master5" src="https://user-images.githubusercontent.com/77958988/113413414-48e33180-93d8-11eb-8a63-380344720f5b.png">
 
 
-21. Create Task definition for Frontend .Set below enviornment variables which represent the self hostname and hostnames of backend microservices
+21. Create Task definition for Frontend .Click on  "Configure via JSON" and add "pseudoTerminal": true,this is required to prevent frontend 
+    task from exiting .Set below enviornment variables which represent the self hostname and hostnames of backend microservices
    REACT_APP_ROOTURL= frontend.upgrad.com
    REACT_APP_DOCSVC_HOST=document.upgrad.com 
    REACT_APP_REGSVC_HOST=registration.upgrad.com 
@@ -394,7 +395,7 @@ MYSQL_PASSWORD=upgradpg
 
 <img width="854" alt="frontend4" border="2" src="https://user-images.githubusercontent.com/77958988/113413529-88aa1900-93d8-11eb-9ff1-856634fc3535.png">
 
-<img width="792" alt="frontend6" border="2" src="https://user-images.githubusercontent.com/77958988/113413567-99f32580-93d8-11eb-9543-da052888a2e0.png">
+<img width="936" alt="frontend5" src="https://user-images.githubusercontent.com/77958988/113503514-09d7ec00-9550-11eb-999d-1fdaab603f62.png">
 
 <img width="792" alt="frontend6" border="2" src="https://user-images.githubusercontent.com/77958988/113413608-ac6d5f00-93d8-11eb-8568-5e9f1417c3f9.png">
 
