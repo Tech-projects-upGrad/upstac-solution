@@ -293,7 +293,40 @@ ubuntu@ip-172-31-47-81:~$
 ![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
 
 # Task4
-16.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy .
+16.Create security group for UPSTAC Application that will allow traffic towards upstac application enabling ports frontend service  at 3000,master service at 8080,
+    registration service at 8090,document service at 8082
+
+<img width="935" alt="tg1" src="https://user-images.githubusercontent.com/77958988/113416623-5819ad80-93df-11eb-876c-3c7d920e9d2a.png">
+
+<img width="960" alt="tg2" src="https://user-images.githubusercontent.com/77958988/113416670-7089c800-93df-11eb-8286-b0f9c0378eac.png">
+
+<img width="883" alt="tg3" src="https://user-images.githubusercontent.com/77958988/113416700-7c758a00-93df-11eb-88e5-183eab852774.png">
+
+<img width="933" alt="tg4" src="https://user-images.githubusercontent.com/77958988/113416722-89927900-93df-11eb-8816-9eab82049a9e.png">
+
+17. Create Application load balancer and target group with routing rule for frontend service.
+
+<img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
+
+<img width="884" alt="lb2" src="https://user-images.githubusercontent.com/77958988/113416797-a7f87480-93df-11eb-9077-7da5d0ddf497.png">
+
+<img width="872" alt="lb3" src="https://user-images.githubusercontent.com/77958988/113416822-b6469080-93df-11eb-9f7b-0587101d441f.png">
+
+<img width="796" alt="lb4" src="https://user-images.githubusercontent.com/77958988/113416848-c3637f80-93df-11eb-8b60-79a2031b1ff6.png">
+
+<img width="930" alt="lb5" src="https://user-images.githubusercontent.com/77958988/113416871-d37b5f00-93df-11eb-89ef-2ec21f104673.png">
+
+<img width="938" alt="lb6" src="https://user-images.githubusercontent.com/77958988/113416895-e130e480-93df-11eb-9265-cd57a82c7fbb.png">
+
+<img width="941" alt="lb7" src="https://user-images.githubusercontent.com/77958988/113418718-a761dd00-93e3-11eb-89dd-b3db6bb5f598.png">
+
+<img width="943" alt="lb8" src="https://user-images.githubusercontent.com/77958988/113418742-b3e63580-93e3-11eb-88d2-1717f00aa612.png">
+
+<img width="938" alt="lb9" src="https://user-images.githubusercontent.com/77958988/113418780-c1032480-93e3-11eb-8d10-f5e2f4f1feb6.png">
+
+<img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
+# Task5
+18.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy .
 
 <img width="867" alt="ecsrole1" src="https://user-images.githubusercontent.com/77958988/113393258-07d92600-93b4-11eb-9d13-f7d243ee066e.png">
 
@@ -305,7 +338,7 @@ ubuntu@ip-172-31-47-81:~$
 
 <img width="917" alt="ecsrole5" src="https://user-images.githubusercontent.com/77958988/113393439-4cfd5800-93b4-11eb-9594-4151cf01f3be.png">
 
-17. Create Task definition for MySQL.set environment variables
+19. Create Task definition for MySQL.set environment variables as mentioned below
 MYSQL_ROOT_PASSWORD=password 
 MYSQL_DATABASE=upgradpg  
 MYSQL_USER=upgradpg  
@@ -331,8 +364,7 @@ MYSQL_PASSWORD=upgradpg
 
 <img width="944" alt="mysql7" src="https://user-images.githubusercontent.com/77958988/113407013-1f230e00-93ca-11eb-85f0-2b255780524c.png">
 
-
-18. Create Task definition for Registration.set enviornment variables  MASTER_SVC_HOST =master.upgrad.com 
+20. Create Task definition for Registration.set enviornment variables  MASTER_SVC_HOST =master.upgrad.com 
    where upgrad.com is the namespace used for service deployment and master is the name of master service .& MYSQL_HOST=mysql.upgrad.com
    represents mysql service in upgrad.com namespace.
 
@@ -401,38 +433,7 @@ MYSQL_PASSWORD=upgradpg
 
 <img width="944" alt="frontend7" border="2" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
 
-22.Create security group for UPSTAC Application that will allow traffic towards upstac application enabling ports frontend service  at 3000,master service at 8080,
-    registration service at 8090,document service at 8082
 
-<img width="935" alt="tg1" src="https://user-images.githubusercontent.com/77958988/113416623-5819ad80-93df-11eb-876c-3c7d920e9d2a.png">
-
-<img width="960" alt="tg2" src="https://user-images.githubusercontent.com/77958988/113416670-7089c800-93df-11eb-8286-b0f9c0378eac.png">
-
-<img width="883" alt="tg3" src="https://user-images.githubusercontent.com/77958988/113416700-7c758a00-93df-11eb-88e5-183eab852774.png">
-
-<img width="933" alt="tg4" src="https://user-images.githubusercontent.com/77958988/113416722-89927900-93df-11eb-8816-9eab82049a9e.png">
-
-23. Create Application load balancer and target group with routing rule for frontend service.
-
-<img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
-
-<img width="884" alt="lb2" src="https://user-images.githubusercontent.com/77958988/113416797-a7f87480-93df-11eb-9077-7da5d0ddf497.png">
-
-<img width="872" alt="lb3" src="https://user-images.githubusercontent.com/77958988/113416822-b6469080-93df-11eb-9f7b-0587101d441f.png">
-
-<img width="796" alt="lb4" src="https://user-images.githubusercontent.com/77958988/113416848-c3637f80-93df-11eb-8b60-79a2031b1ff6.png">
-
-<img width="930" alt="lb5" src="https://user-images.githubusercontent.com/77958988/113416871-d37b5f00-93df-11eb-89ef-2ec21f104673.png">
-
-<img width="938" alt="lb6" src="https://user-images.githubusercontent.com/77958988/113416895-e130e480-93df-11eb-9265-cd57a82c7fbb.png">
-
-<img width="941" alt="lb7" src="https://user-images.githubusercontent.com/77958988/113418718-a761dd00-93e3-11eb-89dd-b3db6bb5f598.png">
-
-<img width="943" alt="lb8" src="https://user-images.githubusercontent.com/77958988/113418742-b3e63580-93e3-11eb-88d2-1717f00aa612.png">
-
-<img width="938" alt="lb9" src="https://user-images.githubusercontent.com/77958988/113418780-c1032480-93e3-11eb-8d10-f5e2f4f1feb6.png">
-
-<img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
 
 
 24. Create cluster for launching microservices of UPSTAC Application in farget mode.
@@ -487,6 +488,7 @@ MYSQL_PASSWORD=upgradpg
 <img width="918" alt="scale6" src="https://user-images.githubusercontent.com/77958988/113405518-96a36e00-93c7-11eb-82ff-164478be5956.png">
 
 <img width="932" alt="scale7" src="https://user-images.githubusercontent.com/77958988/113405551-a753e400-93c7-11eb-80c7-fbe1e00fe6cc.png">
+
 28.Create autoscaleapp policy and attach it to both user and IAM role that will be used to configure autoscaling for registration service.
 
 <img width="710" alt="auto1" src="https://user-images.githubusercontent.com/77958988/113471335-4edd1f00-9479-11eb-9f19-da3733995866.png">
