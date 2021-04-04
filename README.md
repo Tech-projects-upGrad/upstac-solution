@@ -380,7 +380,7 @@ MYSQL_PASSWORD=upgradpg
 <img width="941" alt="master5" src="https://user-images.githubusercontent.com/77958988/113413414-48e33180-93d8-11eb-8a63-380344720f5b.png">
 
 
-21. Create Task definition for Frontend .Set enviornment variables 
+21. Create Task definition for Frontend .Set below enviornment variables which represent the self hostname and hostnames of backend microservices
    REACT_APP_ROOTURL= frontend.upgrad.com
    REACT_APP_DOCSVC_HOST=document.upgrad.com 
    REACT_APP_REGSVC_HOST=registration.upgrad.com 
@@ -399,7 +399,8 @@ MYSQL_PASSWORD=upgradpg
 
 <img width="944" alt="frontend7" border="2" src="https://user-images.githubusercontent.com/77958988/113413628-babb7b00-93d8-11eb-990b-e3a7a7174e13.png">
 
-22.Create security group for UPSTAC Application
+22.Create security group for UPSTAC Application that will allow traffic towards upstac application enabling ports frontend service  at 3000,master service at 8080,
+    registration service at 8090,document service at 8082
 
 <img width="935" alt="tg1" src="https://user-images.githubusercontent.com/77958988/113416623-5819ad80-93df-11eb-876c-3c7d920e9d2a.png">
 
@@ -409,7 +410,7 @@ MYSQL_PASSWORD=upgradpg
 
 <img width="933" alt="tg4" src="https://user-images.githubusercontent.com/77958988/113416722-89927900-93df-11eb-8816-9eab82049a9e.png">
 
-23. Create Application load balancer and target group with routing rule for frontend service
+23. Create Application load balancer and target group with routing rule for frontend service.
 
 <img width="857" alt="lb" src="https://user-images.githubusercontent.com/77958988/113416769-9ca54900-93df-11eb-9f21-4e285643e5f8.png">
 
@@ -432,14 +433,14 @@ MYSQL_PASSWORD=upgradpg
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
 
 
-24. Create cluster for launching microservices of UPSTAC Application.
+24. Create cluster for launching microservices of UPSTAC Application in farget mode.
 
 <img width="1028" alt="cluster1" src="https://user-images.githubusercontent.com/77958988/113430592-121d1380-93f8-11eb-842a-fa459558da6b.png">
 <img width="697" alt="cluster2" src="https://user-images.githubusercontent.com/77958988/113430648-23feb680-93f8-11eb-88ae-fc108973869d.png">
 <img width="766" alt="cluster3" src="https://user-images.githubusercontent.com/77958988/113430678-2fea7880-93f8-11eb-859a-26c9c0121d07.png">
 <img width="933" alt="cluster4" src="https://user-images.githubusercontent.com/77958988/113430708-3aa50d80-93f8-11eb-8727-4dfb876cad4f.png">
 
-25. Create mysql service with a single task with service discovery enabled,with appropriate namespace .
+25. Create mysql service with a single task with service discovery enabled,with appropriate namespace(upgrad.com).
 <img width="778" alt="mysqlsvc1" src="https://user-images.githubusercontent.com/77958988/113434594-dfc2e480-93fe-11eb-80af-1d1209a56bc6.png">
 
 <img width="754" alt="mysqlsvc2" src="https://user-images.githubusercontent.com/77958988/113434620-ed786a00-93fe-11eb-919b-79aa16b01f9a.png">
@@ -492,7 +493,8 @@ MYSQL_PASSWORD=upgradpg
 <img width="906" alt="auto4" src="https://user-images.githubusercontent.com/77958988/113471365-72a06500-9479-11eb-918a-5f1bd5a116e4.png">
 <img width="935" alt="auto5" src="https://user-images.githubusercontent.com/77958988/113471373-7d5afa00-9479-11eb-9353-f810e7854736.png">
 
-29.Create registration service with a single task with service discovery enabled,with appropriate namespace .
+29.Create registration service with a single task with service discovery enabled,with appropriate namespace .Also enable autoscaling 
+   with desired task=1 and maximum task=2.configure autoscaling at targetcpuutilization by registration service > 5%.
 <img width="764" alt="regsvc1" src="https://user-images.githubusercontent.com/77958988/113471065-7d59fa80-9477-11eb-94f0-f3a78e29a446.png">
 <img width="779" alt="regsvc2" src="https://user-images.githubusercontent.com/77958988/113471072-8e0a7080-9477-11eb-97ad-ecf096d13b18.png">
 <img width="827" alt="regsvc3" src="https://user-images.githubusercontent.com/77958988/113471086-a8dce500-9477-11eb-9f15-2c5d970f63f1.png">
@@ -515,7 +517,7 @@ MYSQL_PASSWORD=upgradpg
 <img width="749" alt="mastersvc7" src="https://user-images.githubusercontent.com/77958988/113475044-f6198080-9490-11eb-8bce-3520503b5e25.png">
 <img width="936" alt="mastersvc8" src="https://user-images.githubusercontent.com/77958988/113475049-00d41580-9491-11eb-8e05-68ea84b3f7b8.png">
 
-31.Create frontned service with a single task with service discovery enabled,with appropriate namespace.
+31.Create frontend service with a single task with service discovery enabled,with appropriate namespace.
 <img width="750" alt="frontendsvc1" src="https://user-images.githubusercontent.com/77958988/113477758-c8890300-94a1-11eb-940e-ba7e4047e51d.png">
 <img width="932" alt="frontendsvc2" src="https://user-images.githubusercontent.com/77958988/113477768-e22a4a80-94a1-11eb-9966-f23d06ce9feb.png">
 <img width="716" alt="frontendsvc3" src="https://user-images.githubusercontent.com/77958988/113477775-ed7d7600-94a1-11eb-879b-ee024a2a6f69.png">
@@ -554,7 +556,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 
 ````
 
-33.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 %.
+33.Create alarm for "upstac_regsvc_cpu_utilization_above_5percentage" in cloudwatch with cpu utilization threshold as 5 % and configure email address to triger email notification when CPU Utilization exceeds 5 % for clustername=upstac and servicename=registration.
 <img width="936" alt="alarm2" src="https://user-images.githubusercontent.com/77958988/113479392-74375080-94ac-11eb-965d-45f395471834.png">
 <img width="776" alt="alarm3" src="https://user-images.githubusercontent.com/77958988/113479404-844f3000-94ac-11eb-9560-a0d248fe8198.png">
 <img width="857" alt="alarm4" src="https://user-images.githubusercontent.com/77958988/113479409-90d38880-94ac-11eb-85d1-d921e12b1380.png">
@@ -568,7 +570,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 <img width="575" alt="alarm12" src="https://user-images.githubusercontent.com/77958988/113479723-46530b80-94ae-11eb-9152-43fe2820bc4d.png">
 <img width="934" alt="alarm13" src="https://user-images.githubusercontent.com/77958988/113479560-6f26d100-94ad-11eb-9671-8c1e62c43cd3.png">
 
-34.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register docker API with json payload
+34.Install apache benchmark on ubuntu EC2 instance and pump traffic towards registration service using register  API with json payload
      [register.json](https://github.com/vaishalinankani08/upstac-solution/blob/main/register.json) so as 
      to reach the target threshold for CPU Utilization and trigger autoscaling as well as email notification.
 ````
