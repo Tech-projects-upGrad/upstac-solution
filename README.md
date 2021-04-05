@@ -3,7 +3,8 @@
 This learning path helps you deploy microservice architecture based UPSTAC application on AWS ECS.
 This application uses MySQL database ,frontend is in reactJS and backend microservice's are written in springboot.
 
-<img width="555" alt="upstacservices" src="https://user-images.githubusercontent.com/77958988/113501372-28cf8180-9542-11eb-9f1b-1a0af674c3d1.png">
+![image](https://user-images.githubusercontent.com/77958988/113536855-b9669a00-95f4-11eb-83b1-0577e803544b.png)
+
 
 References:
 
