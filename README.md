@@ -294,6 +294,7 @@ ubuntu@ip-172-31-47-81:~$
 ![image](https://user-images.githubusercontent.com/77958988/113389125-1b34c300-93ad-11eb-9e0e-ed6298b9cc8a.png)
 
 # Task4
+
 16.Create security group for UPSTAC Application that will allow traffic towards upstac application enabling ports frontend service  at 3000,master service at 8080,
     registration service at 8090,document service at 8082
 
@@ -326,7 +327,9 @@ ubuntu@ip-172-31-47-81:~$
 <img width="938" alt="lb9" src="https://user-images.githubusercontent.com/77958988/113418780-c1032480-93e3-11eb-8d10-f5e2f4f1feb6.png">
 
 <img width="943" alt="lb10" src="https://user-images.githubusercontent.com/77958988/113418793-cc565000-93e3-11eb-9ea0-b54b36ecebf9.png">
+
 # Task5
+
 18.Create ecsTaskExecutionRole with AmazonECSTaskExecutionRolePolicy .
 
 <img width="867" alt="ecsrole1" src="https://user-images.githubusercontent.com/77958988/113393258-07d92600-93b4-11eb-9d13-f7d243ee066e.png">
