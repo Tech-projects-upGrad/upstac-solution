@@ -571,7 +571,7 @@ registration.upgrad.com. 60     IN      A       172.31.90.219
 <img width="836" alt="alarm5" src="https://user-images.githubusercontent.com/77958988/113479411-9c26b400-94ac-11eb-9cca-5d4eaa1e7802.png">
 <img width="853" alt="alarm6" src="https://user-images.githubusercontent.com/77958988/113479415-a5b01c00-94ac-11eb-977f-f99b22c80015.png">
 <img width="774" alt="alarm7" src="https://user-images.githubusercontent.com/77958988/113479422-aea0ed80-94ac-11eb-9b07-595b3bb1bf51.png">
-<img width="755" alt="alarm8" src="https://user-images.githubusercontent.com/77958988/113479437-beb8cd00-94ac-11eb-80fb-cb3828b1af99.png">
+<img width="755" alt="alarm8" src="https://user-images.githubusercontent.com/77958988/114199447-f07cd880-9971-11eb-8bab-99df836fce13.png">
 <img width="674" alt="alarm9" src="https://user-images.githubusercontent.com/77958988/113479444-c8423500-94ac-11eb-84f7-3018e5d32b3d.png">
 <img width="688" alt="alarm10" src="https://user-images.githubusercontent.com/77958988/113479472-f162c580-94ac-11eb-9f34-511739c1fe03.png">
 <img width="675" alt="alarm11" src="https://user-images.githubusercontent.com/77958988/113479480-ffb0e180-94ac-11eb-9ef1-961ae7183eea.png">
