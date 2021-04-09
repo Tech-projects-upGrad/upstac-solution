@@ -479,7 +479,7 @@ MYSQL_PASSWORD=upgradpg
 <img width="922" alt="docsvc9" src="https://user-images.githubusercontent.com/77958988/113471026-408e0380-9477-11eb-9a1f-a97b9d82335d.png">
 
 27. Create ecsAutoscaleRole with AutoScalingFullAccess & AmazonEC2ContainerServiceAutoscaleRole
-<img width="960" alt="scale1" src="https://user-images.githubusercontent.com/77958988/113405264-2f85b980-93c7-11eb-8dea-d0b1f78d09dc.png">
+<img width="897" alt="scale1" src="https://user-images.githubusercontent.com/77958988/114198415-ea3a2c80-9970-11eb-98e5-a919626195de.png">
 
 <img width="826" alt="scale2" src="https://user-images.githubusercontent.com/77958988/113405329-49270100-93c7-11eb-9c7d-3c7f4c0f2678.png">
 
